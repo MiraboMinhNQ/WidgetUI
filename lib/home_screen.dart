@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:listview/dashboard_screen.dart';
 import 'package:listview/listview.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -12,9 +13,7 @@ class _HomeScreenState extends State<HomeScreen> {
   int _selectedIndex = 0;
   static const List<Widget> _widgetOptions = <Widget>[
     ListViewScreen(),
-    Text(
-      'Index 2: DashBoard',
-    ),
+    DashBoardScreen()
   ];
 
   void _onItemTapped(int index) {
